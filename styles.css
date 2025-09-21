@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(135deg, #eafaf1 60%, #2b7b6e 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #165d53;
+}
+.container {
+    background: rgba(255,255,255,0.95);
+    max-width: 850px;
+    margin: 32px auto;
+    box-shadow: 0 6px 24px rgba(44, 96, 89, 0.13);
+    border-radius: 24px;
+    padding: 32px 38px 20px 38px;
+    position: relative;
+}
+header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+.timeline-task {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    font-size: 1rem;
+    color: #0d4c3b;
+    margin-bottom: 8px;
+}
+.timeline strong, .task strong {
+    color: #175d53;
+}
+h1 {
+    color: #167a6a;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+.objective-section h2,
+.steps-section h2 {
+    color: #167a6a;
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+}
+.objective-section ul {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 1.05rem;
+}
+.steps-section ol {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+.steps-section li {
+    margin-bottom: 16px;
+}
+.step-objective {
+    color: #0d4c3b;
+    font-weight: 600;
+}
+.step-actions {
+    color: #175d53;
+}
+.icons-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+    margin: 22px 0;
+}
+.icon {
+    width: 48px;
+    height: 48px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(22, 122, 106, 0.07);
+    padding: 6px;
+}
+.interactive-section {
+    text-align: center;
+    margin: 30px auto 10px auto;
+}
+#alertButton {
+    background: #167a6a;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 26px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.22s;
+}
+#alertButton:hover {
+    background: #28a48a;
+}
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 22px;
+}
+.apexplanet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.apex-logo {
+    width: 55px;
+    height: auto;
+}
+.apexplanet span {
+    font-size: 1.08rem;
+    color: #167a6a;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 18px 4vw 10px 4vw;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+}
