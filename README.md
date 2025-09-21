@@ -39,4 +39,4 @@ This project demonstrates foundational concepts in HTML, CSS, and JavaScript, in
 - Icons from [Devicon](https://devicon.dev/).
 - Logo and design elements as per the reference image.
 
-```
+
