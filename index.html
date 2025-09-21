@@ -2,128 +2,213 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to My Webpage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Indana - Web Developer Portfolio</title>
+    <meta name="description" content="Welcome to my web development portfolio. I'm learning modern web technologies at ApexPlanet Software.">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
-            background: url('https://i.imgur.com/ESxJkzM.png') no-repeat center center fixed;
-            background-size: cover;
-            /* Use a dark overlay with opacity for the effect */
-            position: relative;
-        }
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 0;
-        }
-        .webpage-container {
-            position: relative;
-            z-index: 1;
-            max-width: 500px;
-            margin: 40px auto;
-            background: rgba(255,255,255,0.95);
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.45);
-            padding: 32px 30px 28px 30px;
-            text-align: center;
-        }
-        .webpage-container h1 {
-            color: #1877d3;
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .webpage-container h2 {
-            color: #1877d3;
-            font-size: 1.4rem;
-            margin: 18px 0 10px 0;
-        }
-        .webpage-container .about {
-            font-size: 1.15rem;
-            margin-bottom: 26px;
-            color: #222;
-        }
-        .webpage-container .intern-text {
-            color: #1877d3;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
-        .webpage-container .apex-logo-img {
-            width: 220px;
-            margin: 0 auto 12px auto;
-            display: block;
-        }
-        .webpage-container .apex-link {
-            color: #1877d3;
-            text-decoration: underline;
-        }
-        .webpage-container .button-section {
-            margin-top: 30px;
-        }
-        .webpage-container .click-button-title {
-            color: #1877d3;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .webpage-container #alertButton {
-            background: #1877d3;
-            color: #fff;
-            border: none;
-            padding: 12px 30px;
-            font-size: 1rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background 0.2s;
-        }
-        .webpage-container #alertButton:hover {
-            background: #125a9e;
-        }
-        /* Responsive */
-        @media (max-width: 600px) {
-            .webpage-container {
-                max-width: 95vw;
-                padding: 16px 8px 16px 8px;
-            }
-            .webpage-container h1 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="webpage-container">
-        <h1>Welcome to My Webpage</h1>
-        
-        <h2>About Me</h2>
-        <div class="about">
-            Hello! I'm learning web development. This is my first webpage.
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h2><i class="fas fa-code"></i> Aditya Indana</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to My Webpage</h1>
+                    <p class="hero-subtitle">Aspiring Web Developer | Learning Modern Technologies</p>
+                    <div class="hero-buttons">
+                        <button id="alertButton" class="btn btn-primary">
+                            <i class="fas fa-play"></i> Click Me!
+                        </button>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm learning web development and passionate about creating amazing digital experiences. This is my first webpage, and I'm excited to share my journey with you.</p>
+                        <p>I'm currently focusing on mastering HTML, CSS, and JavaScript to build modern, responsive websites.</p>
+                        
+                        <div class="skills">
+                            <h3>Technologies I'm Learning:</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Section -->
+        <section class="internship-section">
+            <div class="container">
+                <h2 class="section-title">I am Intern at</h2>
+                <div class="company-info">
+                    <div class="company-logo">
+                        <img src="https://apexplanet.in/internship/assets/img/0ada0ae5b69f49b12551cdf22d6e0010.png" alt="ApexPlanet Logo" class="apex-logo">
+                    </div>
+                    <div class="company-details">
+                        <h3>ApexPlanet Software Pvt Ltd</h3>
+                        <p>Learning cutting-edge web development technologies and best practices under expert guidance.</p>
+                        <a href="https://apexplanet.com" target="_blank" class="company-link">
+                            <i class="fas fa-external-link-alt"></i> Visit ApexPlanet.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">What I'm Learning</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Semantic markup and modern HTML5 features for structured web content.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS3</h3>
+                        <p>Responsive design, animations, and modern CSS techniques.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Interactive functionality and dynamic web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>adityaindana@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9989329510</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Andra Pradesh, India</span>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aditya Indana</h3>
+                    <p>Aspiring Web Developer</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Internship</h4>
+                    <div class="footer-company">
+                        <img src="https://apexplanet.in/internship/assets/img/0ada0ae5b69f49b12551cdf22d6e0010.png" alt="ApexPlanet Logo" class="footer-logo">
+                        <span>ApexPlanet Software Pvt Ltd</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aditya Indana. All rights reserved. | Built during internship at ApexPlanet Software</p>
+            </div>
         </div>
-        
-        <div class="intern-text">I am Intern at</div>
-        <img class="apex-logo-img" src="https://i.imgur.com/ESxJkzM.png" alt="ApexPlanet Logo">
-        <div>
-            Visit <a class="apex-link" href="https://apexplanet.com" target="_blank">ApexPlanet.com</a> for more info.
-        </div>
-        
-        <div class="button-section">
-            <div class="click-button-title">Click the Button</div>
-            <button id="alertButton">Click Me!</button>
-        </div>
-    </div>
-    <script>
-      document.getElementById('alertButton').onclick = function() {
-        alert("Hello from your first webpage!");
-      };
-    </script>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
